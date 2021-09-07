@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Form</title>
+    <link rel="icon" href="icon.png" type="image/png">
+    <style>
+        @import"https://use.fontawesome.com/releases/v5.5.0/css/all.css";
+        body{
+            background: url(bg11.jpg) no-repeat fixed;
+        }
+        .boxmodel{
+            color: linen;
+           border-style:double;
+           border-color: chartreuse;
+           border-width: 10px 10px;
+            margin: 4px;
+            padding: 5px;
+            background-color: rgb(241, 11, 11);
+            text-align: center;
+        }
+        .header{
+           font-size: 20px;
+           color:rgb(0, 0, 0);
+        }
+        .neeru{
+        outline: none;
+        border:orangered solid 4px;
+        width: 200px;
+        height: 30px;
+        background: none;
+        font-family:Georgia, 'Times New Roman', Times, serif;
+        font-weight: bolder;
+        font-style: italic;
+        border-radius: 15px;
+        }
+        p{
+        font-size: 20px;
+        }
+        .border-bottom{
+        color: rgb(255, 251, 0);
+        height: 65px;
+        width: 355px;
+        font-size: 25px;
+        font-weight: bold;
+        font-family: 'times of roman';
+        border-bottom: rgb(255, 0, 221) solid 5px;
+        border-top:hidden;
+        border-left: hidden;
+        border-right: hidden;
+        outline: none;
+        background: none;
+        }
+        form i{
+        font-size: 30px;
+        padding-top: 10px;
+        color: rgb(0, 0, 0);
+        }
+        a:hover{
+            background-color: rgb(5, 145, 150);
+        }
+        .cc{
+            background-color: rgb(0, 255, 213);
+            width: 600px;
+        }
+        .form-name{
+            font-size: large;
+            font-family: Verdana, Geneva, Tahoma, sans-serif;
+            font-weight: bold;
+            font-style: italic;
+            font-variant:small-caps;
+        }
+        .submit{
+         border-width: 5px;
+         height: 60px;
+         width: 300px;
+         font-size: 40px;
+         font-family:monospace;
+         font-variant: small-caps;
+         font-weight: bold;
+         font-style: italic;
+         color: rgb(255, 238, 0);
+         padding-bottom: 15px;
+         background: none;
+         border-color: rgb(30, 255, 0);
+         border-radius: 20px;
+         border-style: dotted;
+         border-width: 10px;
+         cursor: pointer;
+        }
+        .comment{
+            background: none;
+            border: black 10px;
+            padding: 8px;
+            font: small-caps;
+            font-size: 20px;
+            font-style: italic;
+            font-family: cursive;
+            outline: dashed;
+        }
+        .Reset{
+         border-width: 5px;
+         height: 60px;
+         width: 300px;
+         font-size: 40px;
+         font-family:monospace;
+         font-variant: small-caps;
+         font-weight: bold;
+         font-style: italic;
+         color: rgb(255, 0, 0);
+         padding-bottom: 20px;
+         background: none;
+         border-color: rgb(0, 26, 255);
+         border-radius: 20px;
+         border-style: groove;
+         border-width: 10px;
+         cursor: pointer;
+         float: left;
+        }
+    </style>
+<body>
+<h1 class="boxmodel"><u>Neeraj singh negi</u></h1>
+<div>
+<div class="cc">
+    <a href="#" class="header">Home</a>&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;
+    <a href="#" class="header">News</a>&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;
+    <a href="#" class="header">Courses</a>&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;
+    <a href="#" class="header">About creater</a>
+</div>
+<br>
+<br>
+<form class="bgchange" method="POST" action="connect.php">
+    <fieldset style="width: 70%; font-size: 30;">
+        <legend style=" color: darkblue; font-weight: bolder;">
+            <marquee>Personal-Information</marquee>
+          </legend>
+          <i class="fas fa-user"></i>
+          <input class="border-bottom"type="Text" placeholder="Username or Email Id" name="username">
+          <br>
+          <i class="fas fa-lock"></i>
+          <input class="border-bottom"type="password" placeholder="Password" name="password">
+          <br>
+          <br>
+         <p class="form-name"> Firstname :</p>
+		<input class="neeru" type="text" name="Firstname" placeholder="Name" ><br>
+		<br>
+		<p class="form-name">Lastname :</p>
+		<input class="neeru"  type="text" name="Lastname" placeholder="Sir name"><br>
+		<br>
+		<p class="form-name">Date of Birth :</p>
+		<input class="neeru"  type="date" name="Date of Birth"><br>
+		<br>
+	<p class="form-name">Age</p> <input  class="neeru" type="number" name="Age" min="12" max="50" placeholder="Age"><br>
+		<br>
+		<p class="form-name">Father's name :</p>
+		<input  class="neeru" type="text" name="Father's name"><br>
+		<br>
+	<p class="form-name">	Mother's name : </p>
+		<input class="neeru"  type="text" name="Mother's name"><br>
+		<br>
+		<p class="form-name">Phone number :</p> 
+        <input  class="neeru" type="Tel" name="Phone number" value="+91 " ><br>
+        <br>
+		<p class="form-name">Add your comment :</p>
+		<textarea class="comment" rows="10" cols="100" name="comment"> 
+		</textarea>
+	   	<br>
+		<br>
+		<center><input class="submit" type="submit" name="Submit" href="connect.php" title="Submit Your Form"></center> <input class="Reset" type="Reset" name="Reset" href="connect.php" title="Reset Your Form">
+        </fieldset>
+</form>
+</div>
+<br>
+<br>
+<div>
+   <footer class="cc"> 
+    <a href="#" class="header">faq</a>&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;
+    <a href="#" class="header">About us</a>&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;
+    <a href="#" class="header">help</a>&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;
+    <a href="#" class="header">contact us</a>
+    </footer>
+</div>
+</body>
+</html>
